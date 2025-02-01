@@ -138,4 +138,4 @@ def handle_image(data):
     emit('image_response', {'status': 'Number plate scan successfully'})
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True)
+    socketio.run(app, debug=True,port=8000,host="0.0.0.0")
