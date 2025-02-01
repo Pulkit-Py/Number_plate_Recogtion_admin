@@ -1,0 +1,16 @@
+First run pip install -r requriments.txt
+
+To Run the video on live cam you need to change the Line no. 19 
+From 
+cap = cv2.VideoCapture("Data/2.mp4")
+
+To 
+cap = cv2.VideoCapture(0) # or in place or 0 you can use 1 if you are using external camera
+
+
+and to check the admin pannel run the python flask file and visit http://127.0.0.1:5000
+the admin id and password  is admin and admin 
+
+and also you can  add user by adding id and password in the line no 26
+users = [User(1, "admin", "admin"), User(2, "user2", "password2")]
+
