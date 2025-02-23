@@ -131,7 +131,7 @@ def handle_image(data):
         writer = csv.writer(file)
         writer.writerow([numberPlate, fileName,  time, colorCode])
     # Process the image (e.g., save it, display it, etc.)
-    image.save(f'./uploads/fileName.png')
+    image.save(f'./uploads/{fileName}')
     print("Image received and saved as 'received_image.png'")
 
     # Optionally, emit a response back to the client
